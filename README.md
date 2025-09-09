@@ -1,4 +1,4 @@
-🇨🇳 FUNCTIONAL CN LANGUAGE FILES FOR CSO2, might have a few visual bugs 🇨🇳 
+# 🇨🇳 FUNCTIONAL CN LANGUAGE FILES FOR CSO2, might have a few visual bugs 🇨🇳 
 -EN-
  (Updated on 13.02.2025)
 
