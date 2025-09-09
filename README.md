@@ -5,6 +5,7 @@
 由玩家TeardropWaltz提供翻译文本（HELPED WITH THE TRANSLATION BY TEARDROPWALTZ）
 
 安装模组指南（Guide for installing the mod)
+Link: https://drive.google.com/file/d/1Frsf6xsx8J1mO_Qa9VZFoquuwtR0yCxB/view
 
 -ZH-
 玩家需把模组文件下的整个文件夹与在CSO2目录下的对应文件夹进行整体替换（CSO2目录下需替换的文件大多位于D:\CSO2\Data\cstrike下,或D:\CSO2处的custom）
@@ -25,5 +26,3 @@ Now, the player should open the game client, click the settings under the "Launc
 
 E.g: -lang schinese -masterip global -masterport 30001 -decryptedfiles -enablecustom -debugconsole -debuginfo -username cat -password 1234
 After the operation is completed, remove the pop-up window in the upper right corner, open the game, and the game language will be changed.
-
-Link: https://drive.google.com/file/d/1Frsf6xsx8J1mO_Qa9VZFoquuwtR0yCxB/view
