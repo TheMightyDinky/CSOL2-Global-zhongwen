@@ -1,0 +1,3074 @@
+//
+//ALL UPDATES ARE MADE BY ORGANNER
+//FOR THE GLOBAL SERVER: http://discord.gg/NXYypCQ
+//
+//
+//----------------------------------------------------------------------------
+// BotProfile.db
+// Author: Michael S. Booth, Turtle Rock Studios (www.turtlerockstudios.com)
+//
+// This database defines bot "personalities".
+// Feel free to edit it and define your own bots.
+// 
+// 17.08.14 일본 추가
+//----------------------------------------------------------------------------
+
+//
+// All profiles begin with this data and overwrite their own
+//
+Default
+	Skill = 50
+	Aggression = 50
+	ReactionTime = 0.3
+	AttackDelay = 0
+	Teamwork = 75
+	WeaponPreference = none
+	Cost = 0
+	Difficulty = NORMAL
+	VoicePitch = 100
+	Skin = 0
+	ErrorRangeY = 0
+	UseNewAimSystem = 0
+    BotAimRangeX = 0.01
+    BotAimRangeZ = 0.01
+End
+
+//----------------------------------------------------------------------------
+
+//
+// These templates inherit from Default and override with their values
+// The name of the template defines a type that is used by individual bot profiles
+//
+
+// weapon preference templates
+Template Defa
+	WeaponPreference = m4a1
+	WeaponPreference = ak47
+	WeaponPreference = akm
+	WeaponPreference = mk18
+End
+
+Template DefaX
+	WeaponPreference = aug
+	WeaponPreference = sg552
+	WeaponPreference = famas
+	WeaponPreference = galil
+End
+
+Template Rifle
+	WeaponPreference = acr
+	WeaponPreference = ak12
+	WeaponPreference = scarl
+	WeaponPreference = aek971
+	WeaponPreference = mk18
+	WeaponPreference = akm
+	WeaponPreference = m16a2
+	WeaponPreference = m4a1
+	WeaponPreference = ak47
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = g36k
+End
+
+Template RifleT
+	WeaponPreference = ak12
+	WeaponPreference = acr
+	WeaponPreference = aek971
+	WeaponPreference = scarl
+	WeaponPreference = akm
+	WeaponPreference = mk18
+	WeaponPreference = m16a2
+	WeaponPreference = ak47
+	WeaponPreference = m4a1
+	WeaponPreference = galil
+	WeaponPreference = famas
+	WeaponPreference = g36k
+End
+
+Template Punch
+	WeaponPreferenceBestCount = 6
+	WeaponPreference = beowulf
+	WeaponPreference = scarh
+	WeaponPreference = aug
+	WeaponPreference = sg552
+	WeaponPreference = krisssuperv
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = fal
+	WeaponPreference = hk416c
+End
+
+Template PunchT
+	WeaponPreferenceBestCount = 6
+	WeaponPreference = beowulf
+	WeaponPreference = scarh
+	WeaponPreference = sg552
+	WeaponPreference = aug
+	WeaponPreference = krisssuperv
+	WeaponPreference = galil
+	WeaponPreference = famas
+	WeaponPreference = fal
+	WeaponPreference = hk416c
+End
+
+Template Sniper
+	WeaponPreferenceBestCount = 4
+	WeaponPreference = awm
+	WeaponPreference = awp
+	WeaponPreference = sg550
+	WeaponPreference = g3sg1
+	WeaponPreference = galilsniper
+	WeaponPreference = trg42
+	WeaponPreference = m1garand
+	WeaponPreference = m1903a3
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = m14ebr
+End
+
+Template SniperX
+	WeaponPreference = trg42
+	WeaponPreference = m95
+End
+
+Template Power
+	WeaponPreferenceBestCount = 6
+	WeaponPreference = m60
+	WeaponPreference = m95
+	WeaponPreference = mg3
+	WeaponPreference = m249
+	WeaponPreference = scarh
+End
+
+Template Shotgun
+	WeaponPreferenceBestCount = 6
+	WeaponPreference = striker12
+	WeaponPreference = xm1014
+	WeaponPreference = m3
+	WeaponPreference = m870
+	WeaponPreference = hk416c
+	WeaponPreference = usas12
+End
+
+Template Shield
+//	WeaponPreference = shield
+	WeaponPreference = mk18			// in case shield is  disallowed
+	WeaponPreference = akm
+	WeaponPreference = sg550
+	WeaponPreference = g3sg1
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mx4
+End
+
+Template Spray
+	WeaponPreferenceBestCount = 5
+	WeaponPreference = ar57
+	WeaponPreference = krisssuperv
+	WeaponPreference = k1
+	WeaponPreference = hk416c
+	WeaponPreference = p90
+	WeaponPreference = mx4
+	WeaponPreference = mac10
+	WeaponPreference = tmp
+End
+
+// skill templates
+Template Elite
+	Skill = 100
+	Aggression = 100
+	ReactionTime = 0.12
+	AttackDelay = 0.1
+	Cost = 4
+	Difficulty = ELITE
+	VoicePitch = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.001
+    BotAimRangeZ = 0.006
+End
+
+Template Expert
+	Skill = 90
+	Aggression = 90
+	ReactionTime = 0.17
+	AttackDelay = 0.1
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 88
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.001
+    BotAimRangeZ = 0.008
+End
+
+Template VeryHard
+	Skill = 85
+	Aggression = 80
+	ReactionTime = 0.23
+	AttackDelay = 0.1
+	Cost = 3
+	Difficulty = VERYHARD
+	VoicePitch = 92
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.002
+    BotAimRangeZ = 0.010
+End
+
+Template Hard
+	Skill = 80
+	Aggression = 75
+	ReactionTime = 0.26
+	AttackDelay = 0.2
+	Cost = 3
+	Difficulty = HARD
+	VoicePitch = 94
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.003
+    BotAimRangeZ = 0.012
+End
+
+Template Tough
+	Skill = 80
+	Aggression = 69
+	ReactionTime = 0.3
+	AttackDelay = 0.3
+	Cost = 2
+	Difficulty = TOUGH
+	VoicePitch = 96
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.004
+    BotAimRangeZ = 0.014
+End
+
+Template Normal
+	Skill = 80
+	Aggression = 64
+	ReactionTime = 0.5
+	AttackDelay = 0.6
+	Cost = 2
+	Difficulty = NORMAL
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.005
+    BotAimRangeZ = 0.016
+End
+
+Template Fair
+	Skill = 80
+	Aggression = 61
+	ReactionTime = 0.6
+	AttackDelay = 0.7
+	Cost = 1
+	Difficulty = FAIR
+	VoicePitch = 105
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.006
+    BotAimRangeZ = 0.018
+End
+
+Template Easy
+	Skill = 80
+	Aggression = 58
+	ReactionTime = 0.8
+	AttackDelay = 1.0
+	Cost = 1
+	Difficulty = EASY
+	VoicePitch = 110
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.007
+    BotAimRangeZ = 0.020
+End
+
+// ----------------------
+// Rank Match BotProfile
+// ----------------------
+Template Elobot20
+	Skill = 100
+	Aggression = 100
+	ReactionTime = 0.2
+	AttackDelay = 0.1
+	VoicePitch = 100
+	BlindTime = 0.2
+	Teamwork = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.005
+    BotAimRangeZ = 0.020
+End
+
+Template Elobot19
+	Skill = 96
+	Aggression = 100
+	ReactionTime = 0.2
+	AttackDelay = 0.1
+	VoicePitch = 100
+	BlindTime = 0.25
+	Teamwork = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.010
+    BotAimRangeZ = 0.024
+End
+
+Template Elobot18
+	Skill = 92
+	Aggression = 100
+	ReactionTime = 0.2
+	AttackDelay = 0.1
+	VoicePitch = 100
+	BlindTime = 0.3
+	Teamwork = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.015
+    BotAimRangeZ = 0.028
+End
+
+Template Elobot17
+	Skill = 88
+	Aggression = 100
+	ReactionTime = 0.3
+	AttackDelay = 0.15
+	VoicePitch = 100
+	BlindTime = 0.35
+	Teamwork = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.020
+    BotAimRangeZ = 0.032
+End
+
+Template Elobot16
+	Skill = 84
+	Aggression = 100
+	ReactionTime = 0.4
+	AttackDelay = 0.2
+	VoicePitch = 100
+	BlindTime = 0.4
+	Teamwork = 100
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.025
+    BotAimRangeZ = 0.036
+End
+
+Template Elobot15
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 0.5
+	AttackDelay = 0.25
+	VoicePitch = 100
+	BlindTime = 0.45
+	Teamwork = 90
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.030
+    BotAimRangeZ = 0.042
+End
+
+Template Elobot14
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 0.6
+	AttackDelay = 0.3
+	VoicePitch = 100
+	BlindTime = 0.5
+	Teamwork = 90
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.035
+    BotAimRangeZ = 0.046
+End
+
+Template Elobot13
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 0.7
+	AttackDelay = 0.35
+	VoicePitch = 100
+	BlindTime = 0.55
+	Teamwork = 90
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.040
+    BotAimRangeZ = 0.050
+End
+
+Template Elobot12
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 0.8
+	AttackDelay = 0.4
+	VoicePitch = 100
+	BlindTime = 0.6
+	Teamwork = 90
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.045
+    BotAimRangeZ = 0.054
+End
+
+Template Elobot11
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 0.9
+	AttackDelay = 0.45
+	VoicePitch = 100
+	BlindTime = 0.65
+	Teamwork = 90
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.050
+    BotAimRangeZ = 0.058
+End
+
+Template Elobot10
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 0.7
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.050
+    BotAimRangeZ = 0.062
+End
+
+Template Elobot09
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 0.8
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.050
+    BotAimRangeZ = 0.066
+End
+
+Template Elobot08
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 0.9
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.050
+    BotAimRangeZ = 0.070
+End
+
+Template Elobot07
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 1
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.050
+    BotAimRangeZ = 0.074
+End
+
+Template Elobot06
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 1
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.055
+    BotAimRangeZ = 0.078
+End
+
+Template Elobot05
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 1
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.060
+    BotAimRangeZ = 0.084
+End
+
+Template Elobot04
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 1.1
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.065
+    BotAimRangeZ = 0.088
+End
+
+Template Elobot03
+	Skill = 80
+	Aggression = 100
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 1.2
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.070
+    BotAimRangeZ = 0.092
+End
+
+Template Elobot02
+	Skill = 80
+	Aggression = 90
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 1.3
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.075
+    BotAimRangeZ = 0.096
+End
+
+Template Elobot01
+	Skill = 80
+	Aggression = 80
+	ReactionTime = 1
+	AttackDelay = 0.5
+	VoicePitch = 100
+	BlindTime = 1.4
+	Teamwork = 85
+	UseNewAimSystem = 1
+    BotAimRangeX = 0.08
+    BotAimRangeZ = 0.1
+End
+
+//----------------------------------------------------------------------------
+//
+// These are the individual bot profiles, which inherit first from
+// Default and then the specified Template(s), in order
+//
+//----------------------------------------
+Elite+Rifle Cliffe
+	Skin = 1
+	VoicePitch = 95
+End
+
+Elite+DefaX Minh
+	Skin = 2
+	VoicePitch = 105
+End
+
+Elite+Shotgun Crusher
+	Skin = 22
+	VoicePitch = 84
+End
+
+Elite+Punch Pheonix
+	Skin = 10
+	VoicePitch = 110
+End
+
+Elite+Defa Rock
+	Skin = 1
+	VoicePitch = 80
+End
+
+Elite+PunchT Shark
+	Skin = 2
+	VoicePitch = 90
+End
+
+Elite+Rifle Wolf
+	Skin = 22
+	VoicePitch = 98
+End
+
+Elite+RifleT Gunner
+	Skin = 10
+	VoicePitch = 96
+End
+
+Elite+SniperX Zed
+	Skin = 1
+	VoicePitch = 105
+End
+
+Elite+RifleT Steel
+	Skin = 2
+	VoicePitch = 84
+End
+
+Elite+PunchT Stone
+	Skin = 22
+	VoicePitch = 86
+End
+
+Elite+Spray Torres
+	Skin = 10
+	VoicePitch = 105
+End
+
+Elite+Defa Ronaldo
+	Skin = 1
+	VoicePitch = 84
+End
+
+Elite+Punch Wood
+	Skin = 2
+	VoicePitch = 110
+End
+
+Elite+Power Gerrard
+	Skin = 22
+	VoicePitch = 80
+End
+
+Elite+PunchT Alonso
+	Skin = 10
+	VoicePitch = 90
+End
+
+Elite+Rifle Jobs
+	Skin = 1
+	VoicePitch = 98
+End
+
+Elite+RifleT Kyle
+	Skin = 2
+	VoicePitch = 96
+End
+
+Elite+Sniper Ringo
+	Skin = 22
+	VoicePitch = 105
+End
+
+Elite+RifleT Rip
+	Skin = 10
+	VoicePitch = 84
+End
+
+Elite+PunchT Zach
+	Skin = 1
+	VoicePitch = 86
+End
+
+Elite+Spray Gates
+	Skin = 2
+	VoicePitch = 105
+End
+
+Elite+Shotgun Seth
+	Skin = 22
+	VoicePitch = 84
+End
+
+Elite+Punch Ivan
+	Skin = 10
+	VoicePitch = 110
+End
+
+Elite+Power John
+	Skin = 1
+	VoicePitch = 80
+End
+
+Elite+PunchT Adrian
+	Skin = 2
+	VoicePitch = 90
+End
+
+Elite+Rifle Brad
+	Skin = 22
+	VoicePitch = 98
+End
+
+Elite+RifleT Rafael
+	Skin = 10
+	VoicePitch = 96
+End
+
+Elite+Sniper Connor
+	Skin = 1
+	VoicePitch = 105
+End
+
+Elite+RifleT Derek
+	Skin = 2
+	VoicePitch = 84
+End
+
+Elite+PunchT Erik
+	Skin = 22
+	VoicePitch = 86
+End
+
+Elite+Rifle Allen
+	Skin = 1
+	VoicePitch = 95
+End
+
+Elite+DefaX Bert
+	Skin = 2
+	VoicePitch = 105
+End
+
+Elite+Shotgun Bob
+	Skin = 22
+	VoicePitch = 84
+End
+
+Elite+Punch Cecil
+	Skin = 10
+	VoicePitch = 110
+End
+
+Elite+Defa Elliot
+	Skin = 1
+	VoicePitch = 80
+End
+
+Elite+PunchT Elmer
+	Skin = 2
+	VoicePitch = 90
+End
+
+Elite+Rifle Ernie
+	Skin = 22
+	VoicePitch = 98
+End
+
+Elite+RifleT Eugene
+	Skin = 10
+	VoicePitch = 96
+End
+
+Elite+SniperX Fergus
+	Skin = 1
+	VoicePitch = 105
+End
+
+Elite+RifleT Frank
+	Skin = 2
+	VoicePitch = 84
+End
+
+Elite+PunchT Fred
+	Skin = 22
+	VoicePitch = 86
+End
+
+Elite+Spray George
+	Skin = 10
+	VoicePitch = 105
+End
+
+Elite+Defa Harvey
+	Skin = 1
+	VoicePitch = 84
+End
+
+Elite+Punch Larry
+	Skin = 2
+	VoicePitch = 110
+End
+
+Elite+Power Lester
+	Skin = 22
+	VoicePitch = 80
+End
+
+Elite+PunchT Marvin
+	Skin = 10
+	VoicePitch = 90
+End
+
+Elite+Rifle Neil
+	Skin = 1
+	VoicePitch = 98
+End
+
+Elite+RifleT Oliver
+	Skin = 2
+	VoicePitch = 96
+End
+
+Elite+Sniper Toby
+	Skin = 22
+	VoicePitch = 105
+End
+
+Elite+RifleT Waldo
+	Skin = 10
+	VoicePitch = 84
+End
+
+Elite+PunchT Wesley
+	Skin = 1
+	VoicePitch = 86
+End
+
+Elite+Spray Dean
+	Skin = 2
+	VoicePitch = 105
+End
+
+Elite+Shotgun Dustin
+	Skin = 22
+	VoicePitch = 84
+End
+
+Elite+Punch Ethan
+	Skin = 10
+	VoicePitch = 110
+End
+
+Elite+Power Harold
+	Skin = 1
+	VoicePitch = 80
+End
+
+Elite+PunchT Jason
+	Skin = 2
+	VoicePitch = 90
+End
+
+Elite+Rifle Josh
+	Skin = 22
+	VoicePitch = 98
+End
+
+Elite+RifleT Nick
+	Skin = 10
+	VoicePitch = 96
+End
+
+Elite+Sniper Pat
+	Skin = 1
+	VoicePitch = 105
+End
+
+Elite+RifleT Tim
+	Skin = 2
+	VoicePitch = 84
+End
+
+Elite+PunchT Matt
+	Skin = 22
+	VoicePitch = 86
+End
+
+Elite+PunchT Victor
+	Skin = 22
+	VoicePitch = 86
+End
+
+//----------------------------------------
+Expert+Rifle Cliffe
+	Skin = 1
+	VoicePitch = 95
+End
+
+Expert+DefaX Minh
+	Skin = 2
+	VoicePitch = 105
+End
+
+Expert+Shotgun Crusher
+	Skin = 22
+	VoicePitch = 84
+End
+
+Expert+Punch Pheonix
+	Skin = 10
+	VoicePitch = 110
+End
+
+Expert+Defa Rock
+	Skin = 1
+	VoicePitch = 80
+End
+
+Expert+PunchT Shark
+	Skin = 2
+	VoicePitch = 90
+End
+
+Expert+Rifle Wolf
+	Skin = 22
+	VoicePitch = 98
+End
+
+Expert+RifleT Gunner
+	Skin = 10
+	VoicePitch = 96
+End
+
+Expert+SniperX Zed
+	Skin = 1
+	VoicePitch = 105
+End
+
+Expert+RifleT Steel
+	Skin = 2
+	VoicePitch = 84
+End
+
+Expert+PunchT Stone
+	Skin = 22
+	VoicePitch = 86
+End
+
+Expert+Spray Torres
+	Skin = 10
+	VoicePitch = 105
+End
+
+Expert+Defa Ronaldo
+	Skin = 1
+	VoicePitch = 84
+End
+
+Expert+Punch Wood
+	Skin = 2
+	VoicePitch = 110
+End
+
+Expert+Power Gerrard
+	Skin = 22
+	VoicePitch = 80
+End
+
+Expert+PunchT Alonso
+	Skin = 10
+	VoicePitch = 90
+End
+
+Expert+Rifle Jobs
+	Skin = 1
+	VoicePitch = 98
+End
+
+Expert+RifleT Kyle
+	Skin = 2
+	VoicePitch = 96
+End
+
+Expert+Sniper Ringo
+	Skin = 22
+	VoicePitch = 105
+End
+
+Expert+RifleT Rip
+	Skin = 10
+	VoicePitch = 84
+End
+
+Expert+PunchT Zach
+	Skin = 1
+	VoicePitch = 86
+End
+
+Expert+Spray Gates
+	Skin = 2
+	VoicePitch = 105
+End
+
+Expert+Shotgun Seth
+	Skin = 22
+	VoicePitch = 84
+End
+
+Expert+Punch Ivan
+	Skin = 10
+	VoicePitch = 110
+End
+
+Expert+Power John
+	Skin = 1
+	VoicePitch = 80
+End
+
+Expert+PunchT Adrian
+	Skin = 2
+	VoicePitch = 90
+End
+
+Expert+Rifle Brad
+	Skin = 22
+	VoicePitch = 98
+End
+
+Expert+RifleT Rafael
+	Skin = 10
+	VoicePitch = 96
+End
+
+Expert+Sniper Connor
+	Skin = 1
+	VoicePitch = 105
+End
+
+Expert+RifleT Derek
+	Skin = 2
+	VoicePitch = 84
+End
+
+Expert+PunchT Erik
+	Skin = 22
+	VoicePitch = 86
+End
+
+Expert+Rifle Allen
+	Skin = 1
+	VoicePitch = 95
+End
+
+Expert+DefaX Bert
+	Skin = 2
+	VoicePitch = 105
+End
+
+Expert+Shotgun Bob
+	Skin = 22
+	VoicePitch = 84
+End
+
+Expert+Punch Cecil
+	Skin = 10
+	VoicePitch = 110
+End
+
+Expert+Defa Elliot
+	Skin = 1
+	VoicePitch = 80
+End
+
+Expert+PunchT Elmer
+	Skin = 2
+	VoicePitch = 90
+End
+
+Expert+Rifle Ernie
+	Skin = 22
+	VoicePitch = 98
+End
+
+Expert+RifleT Eugene
+	Skin = 10
+	VoicePitch = 96
+End
+
+Expert+SniperX Fergus
+	Skin = 1
+	VoicePitch = 105
+End
+
+Expert+RifleT Frank
+	Skin = 2
+	VoicePitch = 84
+End
+
+Expert+PunchT Fred
+	Skin = 22
+	VoicePitch = 86
+End
+
+Expert+Spray George
+	Skin = 10
+	VoicePitch = 105
+End
+
+Expert+Defa Harvey
+	Skin = 1
+	VoicePitch = 84
+End
+
+Expert+Punch Larry
+	Skin = 2
+	VoicePitch = 110
+End
+
+Expert+Power Lester
+	Skin = 22
+	VoicePitch = 80
+End
+
+Expert+PunchT Marvin
+	Skin = 10
+	VoicePitch = 90
+End
+
+Expert+Rifle Neil
+	Skin = 1
+	VoicePitch = 98
+End
+
+Expert+RifleT Oliver
+	Skin = 2
+	VoicePitch = 96
+End
+
+Expert+Sniper Toby
+	Skin = 22
+	VoicePitch = 105
+End
+
+Expert+RifleT Waldo
+	Skin = 10
+	VoicePitch = 84
+End
+
+Expert+PunchT Wesley
+	Skin = 1
+	VoicePitch = 86
+End
+
+Expert+Spray Dean
+	Skin = 2
+	VoicePitch = 105
+End
+
+Expert+Shotgun Dustin
+	Skin = 22
+	VoicePitch = 84
+End
+
+Expert+Punch Ethan
+	Skin = 10
+	VoicePitch = 110
+End
+
+Expert+Power Harold
+	Skin = 1
+	VoicePitch = 80
+End
+
+Expert+PunchT Jason
+	Skin = 2
+	VoicePitch = 90
+End
+
+Expert+Rifle Josh
+	Skin = 22
+	VoicePitch = 98
+End
+
+Expert+RifleT Nick
+	Skin = 10
+	VoicePitch = 96
+End
+
+Expert+Sniper Pat
+	Skin = 1
+	VoicePitch = 105
+End
+
+Expert+RifleT Tim
+	Skin = 2
+	VoicePitch = 84
+End
+
+Expert+PunchT Matt
+	Skin = 22
+	VoicePitch = 86
+End
+
+Expert+PunchT Victor
+	Skin = 22
+	VoicePitch = 86
+End
+
+//----------------------------------------
+VeryHard+Rifle Cliffe
+	Skin = 1
+	VoicePitch = 95
+End
+
+VeryHard+DefaX Minh
+	Skin = 2
+	VoicePitch = 105
+End
+
+VeryHard+Shotgun Crusher
+	Skin = 22
+	VoicePitch = 84
+End
+
+VeryHard+Punch Pheonix
+	Skin = 10
+	VoicePitch = 110
+End
+
+VeryHard+Defa Rock
+	Skin = 1
+	VoicePitch = 80
+End
+
+VeryHard+PunchT Shark
+	Skin = 2
+	VoicePitch = 90
+End
+
+VeryHard+Rifle Wolf
+	Skin = 22
+	VoicePitch = 98
+End
+
+VeryHard+RifleT Gunner
+	Skin = 10
+	VoicePitch = 96
+End
+
+VeryHard+SniperX Zed
+	Skin = 1
+	VoicePitch = 105
+End
+
+VeryHard+RifleT Steel
+	Skin = 2
+	VoicePitch = 84
+End
+
+VeryHard+PunchT Stone
+	Skin = 22
+	VoicePitch = 86
+End
+
+VeryHard+Spray Torres
+	Skin = 10
+	VoicePitch = 105
+End
+
+VeryHard+Defa Ronaldo
+	Skin = 1
+	VoicePitch = 84
+End
+
+VeryHard+Punch Wood
+	Skin = 2
+	VoicePitch = 110
+End
+
+VeryHard+Power Gerrard
+	Skin = 22
+	VoicePitch = 80
+End
+
+VeryHard+PunchT Alonso
+	Skin = 10
+	VoicePitch = 90
+End
+
+VeryHard+Rifle Jobs
+	Skin = 1
+	VoicePitch = 98
+End
+
+VeryHard+RifleT Kyle
+	Skin = 2
+	VoicePitch = 96
+End
+
+VeryHard+Sniper Ringo
+	Skin = 22
+	VoicePitch = 105
+End
+
+VeryHard+RifleT Rip
+	Skin = 10
+	VoicePitch = 84
+End
+
+VeryHard+PunchT Zach
+	Skin = 1
+	VoicePitch = 86
+End
+
+VeryHard+Spray Gates
+	Skin = 2
+	VoicePitch = 105
+End
+
+VeryHard+Shotgun Seth
+	Skin = 22
+	VoicePitch = 84
+End
+
+VeryHard+Punch Ivan
+	Skin = 10
+	VoicePitch = 110
+End
+
+VeryHard+Power John
+	Skin = 1
+	VoicePitch = 80
+End
+
+VeryHard+PunchT Adrian
+	Skin = 2
+	VoicePitch = 90
+End
+
+VeryHard+Rifle Brad
+	Skin = 22
+	VoicePitch = 98
+End
+
+VeryHard+RifleT Rafael
+	Skin = 10
+	VoicePitch = 96
+End
+
+VeryHard+Sniper Connor
+	Skin = 1
+	VoicePitch = 105
+End
+
+VeryHard+RifleT Derek
+	Skin = 2
+	VoicePitch = 84
+End
+
+VeryHard+PunchT Erik
+	Skin = 22
+	VoicePitch = 86
+End
+
+VeryHard+Rifle Allen
+	Skin = 1
+	VoicePitch = 95
+End
+
+VeryHard+DefaX Bert
+	Skin = 2
+	VoicePitch = 105
+End
+
+VeryHard+Shotgun Bob
+	Skin = 22
+	VoicePitch = 84
+End
+
+VeryHard+Punch Cecil
+	Skin = 10
+	VoicePitch = 110
+End
+
+VeryHard+Defa Elliot
+	Skin = 1
+	VoicePitch = 80
+End
+
+VeryHard+PunchT Elmer
+	Skin = 2
+	VoicePitch = 90
+End
+
+VeryHard+Rifle Ernie
+	Skin = 22
+	VoicePitch = 98
+End
+
+VeryHard+RifleT Eugene
+	Skin = 10
+	VoicePitch = 96
+End
+
+VeryHard+SniperX Fergus
+	Skin = 1
+	VoicePitch = 105
+End
+
+VeryHard+RifleT Frank
+	Skin = 2
+	VoicePitch = 84
+End
+
+VeryHard+PunchT Fred
+	Skin = 22
+	VoicePitch = 86
+End
+
+VeryHard+Spray George
+	Skin = 10
+	VoicePitch = 105
+End
+
+VeryHard+Defa Harvey
+	Skin = 1
+	VoicePitch = 84
+End
+
+VeryHard+Punch Larry
+	Skin = 2
+	VoicePitch = 110
+End
+
+VeryHard+Power Lester
+	Skin = 22
+	VoicePitch = 80
+End
+
+VeryHard+PunchT Marvin
+	Skin = 10
+	VoicePitch = 90
+End
+
+VeryHard+Rifle Neil
+	Skin = 1
+	VoicePitch = 98
+End
+
+VeryHard+RifleT Oliver
+	Skin = 2
+	VoicePitch = 96
+End
+
+VeryHard+Sniper Toby
+	Skin = 22
+	VoicePitch = 105
+End
+
+VeryHard+RifleT Waldo
+	Skin = 10
+	VoicePitch = 84
+End
+
+VeryHard+PunchT Wesley
+	Skin = 1
+	VoicePitch = 86
+End
+
+VeryHard+Spray Dean
+	Skin = 2
+	VoicePitch = 105
+End
+
+VeryHard+Shotgun Dustin
+	Skin = 22
+	VoicePitch = 84
+End
+
+VeryHard+Punch Ethan
+	Skin = 10
+	VoicePitch = 110
+End
+
+VeryHard+Power Harold
+	Skin = 1
+	VoicePitch = 80
+End
+
+VeryHard+PunchT Jason
+	Skin = 2
+	VoicePitch = 90
+End
+
+VeryHard+Rifle Josh
+	Skin = 22
+	VoicePitch = 98
+End
+
+VeryHard+RifleT Nick
+	Skin = 10
+	VoicePitch = 96
+End
+
+VeryHard+Sniper Pat
+	Skin = 1
+	VoicePitch = 105
+End
+
+VeryHard+RifleT Tim
+	Skin = 2
+	VoicePitch = 84
+End
+
+VeryHard+PunchT Matt
+	Skin = 22
+	VoicePitch = 86
+End
+
+VeryHard+PunchT Victor
+	Skin = 22
+	VoicePitch = 86
+End
+
+//----------------------------------------
+Hard+Rifle Cliffe
+	Skin = 1
+	VoicePitch = 95
+End
+
+Hard+DefaX Minh
+	Skin = 2
+	VoicePitch = 105
+End
+
+Hard+Shotgun Crusher
+	Skin = 22
+	VoicePitch = 84
+End
+
+Hard+Punch Pheonix
+	Skin = 10
+	VoicePitch = 110
+End
+
+Hard+Defa Rock
+	Skin = 1
+	VoicePitch = 80
+End
+
+Hard+PunchT Shark
+	Skin = 2
+	VoicePitch = 90
+End
+
+Hard+Rifle Wolf
+	Skin = 22
+	VoicePitch = 98
+End
+
+Hard+RifleT Gunner
+	Skin = 10
+	VoicePitch = 96
+End
+
+Hard+SniperX Zed
+	Skin = 1
+	VoicePitch = 105
+End
+
+Hard+RifleT Steel
+	Skin = 2
+	VoicePitch = 84
+End
+
+Hard+PunchT Stone
+	Skin = 22
+	VoicePitch = 86
+End
+
+Hard+Spray Torres
+	Skin = 10
+	VoicePitch = 105
+End
+
+Hard+Defa Ronaldo
+	Skin = 1
+	VoicePitch = 84
+End
+
+Hard+Punch Wood
+	Skin = 2
+	VoicePitch = 110
+End
+
+Hard+Power Gerrard
+	Skin = 22
+	VoicePitch = 80
+End
+
+Hard+PunchT Alonso
+	Skin = 10
+	VoicePitch = 90
+End
+
+Hard+Rifle Jobs
+	Skin = 1
+	VoicePitch = 98
+End
+
+Hard+RifleT Kyle
+	Skin = 2
+	VoicePitch = 96
+End
+
+Hard+Sniper Ringo
+	Skin = 22
+	VoicePitch = 105
+End
+
+Hard+RifleT Rip
+	Skin = 10
+	VoicePitch = 84
+End
+
+Hard+PunchT Zach
+	Skin = 1
+	VoicePitch = 86
+End
+
+Hard+Spray Gates
+	Skin = 2
+	VoicePitch = 105
+End
+
+Hard+Shotgun Seth
+	Skin = 22
+	VoicePitch = 84
+End
+
+Hard+Punch Ivan
+	Skin = 10
+	VoicePitch = 110
+End
+
+Hard+Power John
+	Skin = 1
+	VoicePitch = 80
+End
+
+Hard+PunchT Adrian
+	Skin = 2
+	VoicePitch = 90
+End
+
+Hard+Rifle Brad
+	Skin = 22
+	VoicePitch = 98
+End
+
+Hard+RifleT Rafael
+	Skin = 10
+	VoicePitch = 96
+End
+
+Hard+Sniper Connor
+	Skin = 1
+	VoicePitch = 105
+End
+
+Hard+RifleT Derek
+	Skin = 2
+	VoicePitch = 84
+End
+
+Hard+PunchT Erik
+	Skin = 22
+	VoicePitch = 86
+End
+
+Hard+Rifle Allen
+	Skin = 1
+	VoicePitch = 95
+End
+
+Hard+DefaX Bert
+	Skin = 2
+	VoicePitch = 105
+End
+
+Hard+Shotgun Bob
+	Skin = 22
+	VoicePitch = 84
+End
+
+Hard+Punch Cecil
+	Skin = 10
+	VoicePitch = 110
+End
+
+Hard+Defa Elliot
+	Skin = 1
+	VoicePitch = 80
+End
+
+Hard+PunchT Elmer
+	Skin = 2
+	VoicePitch = 90
+End
+
+Hard+Rifle Ernie
+	Skin = 22
+	VoicePitch = 98
+End
+
+Hard+RifleT Eugene
+	Skin = 10
+	VoicePitch = 96
+End
+
+Hard+SniperX Fergus
+	Skin = 1
+	VoicePitch = 105
+End
+
+Hard+RifleT Frank
+	Skin = 2
+	VoicePitch = 84
+End
+
+Hard+PunchT Fred
+	Skin = 22
+	VoicePitch = 86
+End
+
+Hard+Spray George
+	Skin = 10
+	VoicePitch = 105
+End
+
+Hard+Defa Harvey
+	Skin = 1
+	VoicePitch = 84
+End
+
+Hard+Punch Larry
+	Skin = 2
+	VoicePitch = 110
+End
+
+Hard+Power Lester
+	Skin = 22
+	VoicePitch = 80
+End
+
+Hard+PunchT Marvin
+	Skin = 10
+	VoicePitch = 90
+End
+
+Hard+Rifle Neil
+	Skin = 1
+	VoicePitch = 98
+End
+
+Hard+RifleT Oliver
+	Skin = 2
+	VoicePitch = 96
+End
+
+Hard+Sniper Toby
+	Skin = 22
+	VoicePitch = 105
+End
+
+Hard+RifleT Waldo
+	Skin = 10
+	VoicePitch = 84
+End
+
+Hard+PunchT Wesley
+	Skin = 1
+	VoicePitch = 86
+End
+
+Hard+Spray Dean
+	Skin = 2
+	VoicePitch = 105
+End
+
+Hard+Shotgun Dustin
+	Skin = 22
+	VoicePitch = 84
+End
+
+Hard+Punch Ethan
+	Skin = 10
+	VoicePitch = 110
+End
+
+Hard+Power Harold
+	Skin = 1
+	VoicePitch = 80
+End
+
+Hard+PunchT Jason
+	Skin = 2
+	VoicePitch = 90
+End
+
+Hard+Rifle Josh
+	Skin = 22
+	VoicePitch = 98
+End
+
+Hard+RifleT Nick
+	Skin = 10
+	VoicePitch = 96
+End
+
+Hard+Sniper Pat
+	Skin = 1
+	VoicePitch = 105
+End
+
+Hard+RifleT Tim
+	Skin = 2
+	VoicePitch = 84
+End
+
+Hard+PunchT Matt
+	Skin = 22
+	VoicePitch = 86
+End
+
+Hard+PunchT Victor
+	Skin = 22
+	VoicePitch = 86
+End
+
+//----------------------------------------
+Tough+Rifle Cliffe
+	Skin = 1
+	VoicePitch = 95
+End
+
+Tough+DefaX Minh
+	Skin = 2
+	VoicePitch = 105
+End
+
+Tough+Shotgun Crusher
+	Skin = 22
+	VoicePitch = 84
+End
+
+Tough+Punch Pheonix
+	Skin = 10
+	VoicePitch = 110
+End
+
+Tough+Defa Rock
+	Skin = 1
+	VoicePitch = 80
+End
+
+Tough+PunchT Shark
+	Skin = 2
+	VoicePitch = 90
+End
+
+Tough+Rifle Wolf
+	Skin = 22
+	VoicePitch = 98
+End
+
+Tough+RifleT Gunner
+	Skin = 10
+	VoicePitch = 96
+End
+
+Tough+SniperX Zed
+	Skin = 1
+	VoicePitch = 105
+End
+
+Tough+RifleT Steel
+	Skin = 2
+	VoicePitch = 84
+End
+
+Tough+PunchT Stone
+	Skin = 22
+	VoicePitch = 86
+End
+
+Tough+Spray Torres
+	Skin = 10
+	VoicePitch = 105
+End
+
+Tough+Defa Ronaldo
+	Skin = 1
+	VoicePitch = 84
+End
+
+Tough+Punch Wood
+	Skin = 2
+	VoicePitch = 110
+End
+
+Tough+Power Gerrard
+	Skin = 22
+	VoicePitch = 80
+End
+
+Tough+PunchT Alonso
+	Skin = 10
+	VoicePitch = 90
+End
+
+Tough+Rifle Jobs
+	Skin = 1
+	VoicePitch = 98
+End
+
+Tough+RifleT Kyle
+	Skin = 2
+	VoicePitch = 96
+End
+
+Tough+Sniper Ringo
+	Skin = 22
+	VoicePitch = 105
+End
+
+Tough+RifleT Rip
+	Skin = 10
+	VoicePitch = 84
+End
+
+Tough+PunchT Zach
+	Skin = 1
+	VoicePitch = 86
+End
+
+Tough+Spray Gates
+	Skin = 2
+	VoicePitch = 105
+End
+
+Tough+Shotgun Seth
+	Skin = 22
+	VoicePitch = 84
+End
+
+Tough+Punch Ivan
+	Skin = 10
+	VoicePitch = 110
+End
+
+Tough+Power John
+	Skin = 1
+	VoicePitch = 80
+End
+
+Tough+PunchT Adrian
+	Skin = 2
+	VoicePitch = 90
+End
+
+Tough+Rifle Brad
+	Skin = 22
+	VoicePitch = 98
+End
+
+Tough+RifleT Rafael
+	Skin = 10
+	VoicePitch = 96
+End
+
+Tough+Sniper Connor
+	Skin = 1
+	VoicePitch = 105
+End
+
+Tough+RifleT Derek
+	Skin = 2
+	VoicePitch = 84
+End
+
+Tough+PunchT Erik
+	Skin = 22
+	VoicePitch = 86
+End
+
+Tough+Rifle Allen
+	Skin = 1
+	VoicePitch = 95
+End
+
+Tough+DefaX Bert
+	Skin = 2
+	VoicePitch = 105
+End
+
+Tough+Shotgun Bob
+	Skin = 22
+	VoicePitch = 84
+End
+
+Tough+Punch Cecil
+	Skin = 10
+	VoicePitch = 110
+End
+
+Tough+Defa Elliot
+	Skin = 1
+	VoicePitch = 80
+End
+
+Tough+PunchT Elmer
+	Skin = 2
+	VoicePitch = 90
+End
+
+Tough+Rifle Ernie
+	Skin = 22
+	VoicePitch = 98
+End
+
+Tough+RifleT Eugene
+	Skin = 10
+	VoicePitch = 96
+End
+
+Tough+SniperX Fergus
+	Skin = 1
+	VoicePitch = 105
+End
+
+Tough+RifleT Frank
+	Skin = 2
+	VoicePitch = 84
+End
+
+Tough+PunchT Fred
+	Skin = 22
+	VoicePitch = 86
+End
+
+Tough+Spray George
+	Skin = 10
+	VoicePitch = 105
+End
+
+Tough+Defa Harvey
+	Skin = 1
+	VoicePitch = 84
+End
+
+Tough+Punch Larry
+	Skin = 2
+	VoicePitch = 110
+End
+
+Tough+Power Lester
+	Skin = 22
+	VoicePitch = 80
+End
+
+Tough+PunchT Marvin
+	Skin = 10
+	VoicePitch = 90
+End
+
+Tough+Rifle Neil
+	Skin = 1
+	VoicePitch = 98
+End
+
+Tough+RifleT Oliver
+	Skin = 2
+	VoicePitch = 96
+End
+
+Tough+Sniper Toby
+	Skin = 22
+	VoicePitch = 105
+End
+
+Tough+RifleT Waldo
+	Skin = 10
+	VoicePitch = 84
+End
+
+Tough+PunchT Wesley
+	Skin = 1
+	VoicePitch = 86
+End
+
+Tough+Spray Dean
+	Skin = 2
+	VoicePitch = 105
+End
+
+Tough+Shotgun Dustin
+	Skin = 22
+	VoicePitch = 84
+End
+
+Tough+Punch Ethan
+	Skin = 10
+	VoicePitch = 110
+End
+
+Tough+Power Harold
+	Skin = 1
+	VoicePitch = 80
+End
+
+Tough+PunchT Jason
+	Skin = 2
+	VoicePitch = 90
+End
+
+Tough+Rifle Josh
+	Skin = 22
+	VoicePitch = 98
+End
+
+Tough+RifleT Nick
+	Skin = 10
+	VoicePitch = 96
+End
+
+Tough+Sniper Pat
+	Skin = 1
+	VoicePitch = 105
+End
+
+Tough+RifleT Tim
+	Skin = 2
+	VoicePitch = 84
+End
+
+Tough+PunchT Matt
+	Skin = 22
+	VoicePitch = 86
+End
+
+Tough+PunchT Victor
+	Skin = 22
+	VoicePitch = 86
+End
+
+//----------------------------------------
+Normal+Rifle Cliffe
+	Skin = 1
+	VoicePitch = 95
+End
+
+Normal+DefaX Minh
+	Skin = 2
+	VoicePitch = 105
+End
+
+Normal+Shotgun Crusher
+	Skin = 22
+	VoicePitch = 84
+End
+
+Normal+Punch Pheonix
+	Skin = 10
+	VoicePitch = 110
+End
+
+Normal+Defa Rock
+	Skin = 1
+	VoicePitch = 80
+End
+
+Normal+PunchT Shark
+	Skin = 2
+	VoicePitch = 90
+End
+
+Normal+Rifle Wolf
+	Skin = 22
+	VoicePitch = 98
+End
+
+Normal+RifleT Gunner
+	Skin = 10
+	VoicePitch = 96
+End
+
+Normal+SniperX Zed
+	Skin = 1
+	VoicePitch = 105
+End
+
+Normal+RifleT Steel
+	Skin = 2
+	VoicePitch = 84
+End
+
+Normal+PunchT Stone
+	Skin = 22
+	VoicePitch = 86
+End
+
+Normal+Spray Torres
+	Skin = 10
+	VoicePitch = 105
+End
+
+Normal+Defa Ronaldo
+	Skin = 1
+	VoicePitch = 84
+End
+
+Normal+Punch Wood
+	Skin = 2
+	VoicePitch = 110
+End
+
+Normal+Power Gerrard
+	Skin = 22
+	VoicePitch = 80
+End
+
+Normal+PunchT Alonso
+	Skin = 10
+	VoicePitch = 90
+End
+
+Normal+Rifle Jobs
+	Skin = 1
+	VoicePitch = 98
+End
+
+Normal+RifleT Kyle
+	Skin = 2
+	VoicePitch = 96
+End
+
+Normal+Sniper Ringo
+	Skin = 22
+	VoicePitch = 105
+End
+
+Normal+RifleT Rip
+	Skin = 10
+	VoicePitch = 84
+End
+
+Normal+PunchT Zach
+	Skin = 1
+	VoicePitch = 86
+End
+
+Normal+Spray Gates
+	Skin = 2
+	VoicePitch = 105
+End
+
+Normal+Shotgun Seth
+	Skin = 22
+	VoicePitch = 84
+End
+
+Normal+Punch Ivan
+	Skin = 10
+	VoicePitch = 110
+End
+
+Normal+Power John
+	Skin = 1
+	VoicePitch = 80
+End
+
+Normal+PunchT Adrian
+	Skin = 2
+	VoicePitch = 90
+End
+
+Normal+Rifle Brad
+	Skin = 22
+	VoicePitch = 98
+End
+
+Normal+RifleT Rafael
+	Skin = 10
+	VoicePitch = 96
+End
+
+Normal+Sniper Connor
+	Skin = 1
+	VoicePitch = 105
+End
+
+Normal+RifleT Derek
+	Skin = 2
+	VoicePitch = 84
+End
+
+Normal+PunchT Erik
+	Skin = 22
+	VoicePitch = 86
+End
+
+Normal+Rifle Allen
+	Skin = 1
+	VoicePitch = 95
+End
+
+Normal+DefaX Bert
+	Skin = 2
+	VoicePitch = 105
+End
+
+Normal+Shotgun Bob
+	Skin = 22
+	VoicePitch = 84
+End
+
+Normal+Punch Cecil
+	Skin = 10
+	VoicePitch = 110
+End
+
+Normal+Defa Elliot
+	Skin = 1
+	VoicePitch = 80
+End
+
+Normal+PunchT Elmer
+	Skin = 2
+	VoicePitch = 90
+End
+
+Normal+Rifle Ernie
+	Skin = 22
+	VoicePitch = 98
+End
+
+Normal+RifleT Eugene
+	Skin = 10
+	VoicePitch = 96
+End
+
+Normal+SniperX Fergus
+	Skin = 1
+	VoicePitch = 105
+End
+
+Normal+RifleT Frank
+	Skin = 2
+	VoicePitch = 84
+End
+
+Normal+PunchT Fred
+	Skin = 22
+	VoicePitch = 86
+End
+
+Normal+Spray George
+	Skin = 10
+	VoicePitch = 105
+End
+
+Normal+Defa Harvey
+	Skin = 1
+	VoicePitch = 84
+End
+
+Normal+Punch Larry
+	Skin = 2
+	VoicePitch = 110
+End
+
+Normal+Power Lester
+	Skin = 22
+	VoicePitch = 80
+End
+
+Normal+PunchT Marvin
+	Skin = 10
+	VoicePitch = 90
+End
+
+Normal+Rifle Neil
+	Skin = 1
+	VoicePitch = 98
+End
+
+Normal+RifleT Oliver
+	Skin = 2
+	VoicePitch = 96
+End
+
+Normal+Sniper Toby
+	Skin = 22
+	VoicePitch = 105
+End
+
+Normal+RifleT Waldo
+	Skin = 10
+	VoicePitch = 84
+End
+
+Normal+PunchT Wesley
+	Skin = 1
+	VoicePitch = 86
+End
+
+Normal+Spray Dean
+	Skin = 2
+	VoicePitch = 105
+End
+
+Normal+Shotgun Dustin
+	Skin = 22
+	VoicePitch = 84
+End
+
+Normal+Punch Ethan
+	Skin = 10
+	VoicePitch = 110
+End
+
+Normal+Power Harold
+	Skin = 1
+	VoicePitch = 80
+End
+
+Normal+PunchT Jason
+	Skin = 2
+	VoicePitch = 90
+End
+
+Normal+Rifle Josh
+	Skin = 22
+	VoicePitch = 98
+End
+
+Normal+RifleT Nick
+	Skin = 10
+	VoicePitch = 96
+End
+
+Normal+Sniper Pat
+	Skin = 1
+	VoicePitch = 105
+End
+
+Normal+RifleT Tim
+	Skin = 2
+	VoicePitch = 84
+End
+
+Normal+PunchT Matt
+	Skin = 22
+	VoicePitch = 86
+End
+
+Normal+PunchT Victor
+	Skin = 22
+	VoicePitch = 86
+End
+
+//----------------------------------------
+Fair+Rifle Cliffe
+	Skin = 1
+	VoicePitch = 95
+End
+
+Fair+DefaX Minh
+	Skin = 2
+	VoicePitch = 105
+End
+
+Fair+Shotgun Crusher
+	Skin = 22
+	VoicePitch = 84
+End
+
+Fair+Punch Pheonix
+	Skin = 10
+	VoicePitch = 110
+End
+
+Fair+Defa Rock
+	Skin = 1
+	VoicePitch = 80
+End
+
+Fair+PunchT Shark
+	Skin = 2
+	VoicePitch = 90
+End
+
+Fair+Rifle Wolf
+	Skin = 22
+	VoicePitch = 98
+End
+
+Fair+RifleT Gunner
+	Skin = 10
+	VoicePitch = 96
+End
+
+Fair+SniperX Zed
+	Skin = 1
+	VoicePitch = 105
+End
+
+Fair+RifleT Steel
+	Skin = 2
+	VoicePitch = 84
+End
+
+Fair+PunchT Stone
+	Skin = 22
+	VoicePitch = 86
+End
+
+Fair+Spray Torres
+	Skin = 10
+	VoicePitch = 105
+End
+
+Fair+Defa Ronaldo
+	Skin = 1
+	VoicePitch = 84
+End
+
+Fair+Punch Wood
+	Skin = 2
+	VoicePitch = 110
+End
+
+Fair+Power Gerrard
+	Skin = 22
+	VoicePitch = 80
+End
+
+Fair+PunchT Alonso
+	Skin = 10
+	VoicePitch = 90
+End
+
+Fair+Rifle Jobs
+	Skin = 1
+	VoicePitch = 98
+End
+
+Fair+RifleT Kyle
+	Skin = 2
+	VoicePitch = 96
+End
+
+Fair+Sniper Ringo
+	Skin = 22
+	VoicePitch = 105
+End
+
+Fair+RifleT Rip
+	Skin = 10
+	VoicePitch = 84
+End
+
+Fair+PunchT Zach
+	Skin = 1
+	VoicePitch = 86
+End
+
+Fair+Spray Gates
+	Skin = 2
+	VoicePitch = 105
+End
+
+Fair+Shotgun Seth
+	Skin = 22
+	VoicePitch = 84
+End
+
+Fair+Punch Ivan
+	Skin = 10
+	VoicePitch = 110
+End
+
+Fair+Power John
+	Skin = 1
+	VoicePitch = 80
+End
+
+Fair+PunchT Adrian
+	Skin = 2
+	VoicePitch = 90
+End
+
+Fair+Rifle Brad
+	Skin = 22
+	VoicePitch = 98
+End
+
+Fair+RifleT Rafael
+	Skin = 10
+	VoicePitch = 96
+End
+
+Fair+Sniper Connor
+	Skin = 1
+	VoicePitch = 105
+End
+
+Fair+RifleT Derek
+	Skin = 2
+	VoicePitch = 84
+End
+
+Fair+PunchT Erik
+	Skin = 22
+	VoicePitch = 86
+End
+
+Fair+Rifle Allen
+	Skin = 1
+	VoicePitch = 95
+End
+
+Fair+DefaX Bert
+	Skin = 2
+	VoicePitch = 105
+End
+
+Fair+Shotgun Bob
+	Skin = 22
+	VoicePitch = 84
+End
+
+Fair+Punch Cecil
+	Skin = 10
+	VoicePitch = 110
+End
+
+Fair+Defa Elliot
+	Skin = 1
+	VoicePitch = 80
+End
+
+Fair+PunchT Elmer
+	Skin = 2
+	VoicePitch = 90
+End
+
+Fair+Rifle Ernie
+	Skin = 22
+	VoicePitch = 98
+End
+
+Fair+RifleT Eugene
+	Skin = 10
+	VoicePitch = 96
+End
+
+Fair+SniperX Fergus
+	Skin = 1
+	VoicePitch = 105
+End
+
+Fair+RifleT Frank
+	Skin = 2
+	VoicePitch = 84
+End
+
+Fair+PunchT Fred
+	Skin = 22
+	VoicePitch = 86
+End
+
+Fair+Spray George
+	Skin = 10
+	VoicePitch = 105
+End
+
+Fair+Defa Harvey
+	Skin = 1
+	VoicePitch = 84
+End
+
+Fair+Punch Larry
+	Skin = 2
+	VoicePitch = 110
+End
+
+Fair+Power Lester
+	Skin = 22
+	VoicePitch = 80
+End
+
+Fair+PunchT Marvin
+	Skin = 10
+	VoicePitch = 90
+End
+
+Fair+Rifle Neil
+	Skin = 1
+	VoicePitch = 98
+End
+
+Fair+RifleT Oliver
+	Skin = 2
+	VoicePitch = 96
+End
+
+Fair+Sniper Toby
+	Skin = 22
+	VoicePitch = 105
+End
+
+Fair+RifleT Waldo
+	Skin = 10
+	VoicePitch = 84
+End
+
+Fair+PunchT Wesley
+	Skin = 1
+	VoicePitch = 86
+End
+
+Fair+Spray Dean
+	Skin = 2
+	VoicePitch = 105
+End
+
+Fair+Shotgun Dustin
+	Skin = 22
+	VoicePitch = 84
+End
+
+Fair+Punch Ethan
+	Skin = 10
+	VoicePitch = 110
+End
+
+Fair+Power Harold
+	Skin = 1
+	VoicePitch = 80
+End
+
+Fair+PunchT Jason
+	Skin = 2
+	VoicePitch = 90
+End
+
+Fair+Rifle Josh
+	Skin = 22
+	VoicePitch = 98
+End
+
+Fair+RifleT Nick
+	Skin = 10
+	VoicePitch = 96
+End
+
+Fair+Sniper Pat
+	Skin = 1
+	VoicePitch = 105
+End
+
+Fair+RifleT Tim
+	Skin = 2
+	VoicePitch = 84
+End
+
+Fair+PunchT Matt
+	Skin = 22
+	VoicePitch = 86
+End
+
+Fair+PunchT Victor
+	Skin = 22
+	VoicePitch = 86
+End
+
+//----------------------------------------
+Easy+Rifle Cliffe
+	Skin = 1
+	VoicePitch = 95
+End
+
+Easy+DefaX Minh
+	Skin = 2
+	VoicePitch = 105
+End
+
+Easy+Shotgun Crusher
+	Skin = 22
+	VoicePitch = 84
+End
+
+Easy+Punch Pheonix
+	Skin = 10
+	VoicePitch = 110
+End
+
+Easy+Defa Rock
+	Skin = 1
+	VoicePitch = 80
+End
+
+Easy+PunchT Shark
+	Skin = 2
+	VoicePitch = 90
+End
+
+Easy+Rifle Wolf
+	Skin = 22
+	VoicePitch = 98
+End
+
+Easy+RifleT Gunner
+	Skin = 10
+	VoicePitch = 96
+End
+
+Easy+SniperX Zed
+	Skin = 1
+	VoicePitch = 105
+End
+
+Easy+RifleT Steel
+	Skin = 2
+	VoicePitch = 84
+End
+
+Easy+PunchT Stone
+	Skin = 22
+	VoicePitch = 86
+End
+
+Easy+Spray Torres
+	Skin = 10
+	VoicePitch = 105
+End
+
+Easy+Defa Ronaldo
+	Skin = 1
+	VoicePitch = 84
+End
+
+Easy+Punch Wood
+	Skin = 2
+	VoicePitch = 110
+End
+
+Easy+Power Gerrard
+	Skin = 22
+	VoicePitch = 80
+End
+
+Easy+PunchT Alonso
+	Skin = 10
+	VoicePitch = 90
+End
+
+Easy+Rifle Jobs
+	Skin = 1
+	VoicePitch = 98
+End
+
+Easy+RifleT Kyle
+	Skin = 2
+	VoicePitch = 96
+End
+
+Easy+Sniper Ringo
+	Skin = 22
+	VoicePitch = 105
+End
+
+Easy+RifleT Rip
+	Skin = 10
+	VoicePitch = 84
+End
+
+Easy+PunchT Zach
+	Skin = 1
+	VoicePitch = 86
+End
+
+Easy+Spray Gates
+	Skin = 2
+	VoicePitch = 105
+End
+
+Easy+Shotgun Seth
+	Skin = 22
+	VoicePitch = 84
+End
+
+Easy+Punch Ivan
+	Skin = 10
+	VoicePitch = 110
+End
+
+Easy+Power John
+	Skin = 1
+	VoicePitch = 80
+End
+
+Easy+PunchT Adrian
+	Skin = 2
+	VoicePitch = 90
+End
+
+Easy+Rifle Brad
+	Skin = 22
+	VoicePitch = 98
+End
+
+Easy+RifleT Rafael
+	Skin = 10
+	VoicePitch = 96
+End
+
+Easy+Sniper Connor
+	Skin = 1
+	VoicePitch = 105
+End
+
+Easy+RifleT Derek
+	Skin = 2
+	VoicePitch = 84
+End
+
+Easy+PunchT Erik
+	Skin = 22
+	VoicePitch = 86
+End
+
+Easy+Rifle Allen
+	Skin = 1
+	VoicePitch = 95
+End
+
+Easy+DefaX Bert
+	Skin = 2
+	VoicePitch = 105
+End
+
+Easy+Shotgun Bob
+	Skin = 22
+	VoicePitch = 84
+End
+
+Easy+Punch Cecil
+	Skin = 10
+	VoicePitch = 110
+End
+
+Easy+Defa Elliot
+	Skin = 1
+	VoicePitch = 80
+End
+
+Easy+PunchT Elmer
+	Skin = 2
+	VoicePitch = 90
+End
+
+Easy+Rifle Ernie
+	Skin = 22
+	VoicePitch = 98
+End
+
+Easy+RifleT Eugene
+	Skin = 10
+	VoicePitch = 96
+End
+
+Easy+SniperX Fergus
+	Skin = 1
+	VoicePitch = 105
+End
+
+Easy+RifleT Frank
+	Skin = 2
+	VoicePitch = 84
+End
+
+Easy+PunchT Fred
+	Skin = 22
+	VoicePitch = 86
+End
+
+Easy+Spray George
+	Skin = 10
+	VoicePitch = 105
+End
+
+Easy+Defa Harvey
+	Skin = 1
+	VoicePitch = 84
+End
+
+Easy+Punch Larry
+	Skin = 2
+	VoicePitch = 110
+End
+
+Easy+Power Lester
+	Skin = 22
+	VoicePitch = 80
+End
+
+Easy+PunchT Marvin
+	Skin = 10
+	VoicePitch = 90
+End
+
+Easy+Rifle Neil
+	Skin = 1
+	VoicePitch = 98
+End
+
+Easy+RifleT Oliver
+	Skin = 2
+	VoicePitch = 96
+End
+
+Easy+Sniper Toby
+	Skin = 22
+	VoicePitch = 105
+End
+
+Easy+RifleT Waldo
+	Skin = 10
+	VoicePitch = 84
+End
+
+Easy+PunchT Wesley
+	Skin = 1
+	VoicePitch = 86
+End
+
+Easy+Spray Dean
+	Skin = 2
+	VoicePitch = 105
+End
+
+Easy+Shotgun Dustin
+	Skin = 22
+	VoicePitch = 84
+End
+
+Easy+Punch Ethan
+	Skin = 10
+	VoicePitch = 110
+End
+
+Easy+Power Harold
+	Skin = 1
+	VoicePitch = 80
+End
+
+Easy+PunchT Jason
+	Skin = 2
+	VoicePitch = 90
+End
+
+Easy+Rifle Josh
+	Skin = 22
+	VoicePitch = 98
+End
+
+Easy+RifleT Nick
+	Skin = 10
+	VoicePitch = 96
+End
+
+Easy+Sniper Pat
+	Skin = 1
+	VoicePitch = 105
+End
+
+Easy+RifleT Tim
+	Skin = 2
+	VoicePitch = 84
+End
+
+Easy+PunchT Matt
+	Skin = 22
+	VoicePitch = 86
+End
+
+Easy+PunchT Victor
+	Skin = 22
+	VoicePitch = 86
+End
