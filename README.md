@@ -1,4 +1,8 @@
 # 🇨🇳 FUNCTIONAL CN LANGUAGE FILES FOR CSO2 🇨🇳 
+# License
+This project is not affiliated with either Valve or Nexon. "Counter-Strike: Online 2" is a game which is owned by these two companies.
+Licensed under the CC BY-SA 3.0 license.
+
 -EN-
  (Updated on 13.02.2025)
 
