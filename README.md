@@ -3,7 +3,7 @@
 This project is not affiliated with either Valve or Nexon. "Counter-Strike: Online 2" is a game which is owned by these two companies.
 Licensed under the CC BY-SA 3.0 license.
 
--EN-
+# EN
  (Updated on 13.02.2025)
 
 This pack contains:
@@ -16,7 +16,7 @@ QingXue Botprofile (Better than the current one in my opinion; I would actually 
 Modification of the Simplified Chinese files from CSOL2 (aka CSO2 QingXue, CSO2 QQ)
 Bad word censor script (Might work on Global)
 
--ZH-
+# ZH
 内容：
 1.备份游戏文件
 2.提高游戏体验的额外模组
