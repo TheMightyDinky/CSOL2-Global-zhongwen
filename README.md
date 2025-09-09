@@ -25,3 +25,5 @@ Now, the player should open the game client, click the settings under the "Launc
 
 E.g: -lang schinese -masterip global -masterport 30001 -decryptedfiles -enablecustom -debugconsole -debuginfo -username cat -password 1234
 After the operation is completed, remove the pop-up window in the upper right corner, open the game, and the game language will be changed.
+
+Link: https://drive.google.com/file/d/1Frsf6xsx8J1mO_Qa9VZFoquuwtR0yCxB/view
