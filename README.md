@@ -32,5 +32,6 @@ Bad word censor script (Might work on Global)
 操作完成后右上角x掉弹窗,开启游戏,游戏语言就改好了.
 (-lang schinese -masterip global -masterport 30001 -decryptedfiles -enablecustom -debugconsole -debuginfo -username [?] -password [?] 
 
-Link/网站链接： https://drive.google.com/file/d/1Frsf6xsx8J1mO_Qa9VZFoquuwtR0yCxB/view?usp=sharing
+# Link/网站链接
+Google Drive: https://drive.google.com/file/d/1Frsf6xsx8J1mO_Qa9VZFoquuwtR0yCxB/view?usp=sharing 
 Youtube: https://www.youtube.com/watch?v=Ai_8mu9RdpI
