@@ -8,8 +8,6 @@ This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 Unport
 本作品采用知识共享署名-相同方式共享4.0版国际许可协议授权。
 
 # EN
- (Updated on 13.02.2025)
-
 This pack contains:
 New lobby promotion banner
 CN_font
