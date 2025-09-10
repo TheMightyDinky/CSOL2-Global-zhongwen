@@ -15,6 +15,7 @@ This pack contains: New lobby promotion banner CN_font Chinese voicelines for bo
 
 # 安装模组指南（Guide for installing the mod)
 Link: https://drive.google.com/file/d/1Frsf6xsx8J1mO_Qa9VZFoquuwtR0yCxB/view
+Youtube: https://www.youtube.com/watch?v=Ai_8mu9RdpI
 
 -ZH-
 玩家需把模组文件下的整个文件夹与在CSO2目录下的对应文件夹进行整体替换（CSO2目录下需替换的文件大多位于D:\CSO2\Data\cstrike下,或D:\CSO2处的custom）
