@@ -17,6 +17,7 @@ This pack contains: New lobby promotion banner, CN_font, Chinese voicelines for 
 Link: https://drive.google.com/file/d/1Frsf6xsx8J1mO_Qa9VZFoquuwtR0yCxB/view
 Youtube: https://www.youtube.com/watch?v=Ai_8mu9RdpI
 
+
 ### Architecture & Technical Implementation
 
 #### 1. Problem Statement & System Discrepancies
@@ -30,6 +31,7 @@ Because the QingXue Chinese files lacked structural alignment with the Global bu
 
 #### 3. Collaborative Development Loops
 To manage individual language limits while keeping peak velocity on testing UI stability and fixing command-line launcher compatibility, translation strings were crowd-sourced. A native Chinese partner (`TeardropWaltz`) was brought into the pipeline to translate and audit high-density text files for game modes, specialized weapons, trophies, and localized documentation.
+
 
 -ZH-
 玩家需把模组文件下的整个文件夹与在CSO2目录下的对应文件夹进行整体替换（CSO2目录下需替换的文件大多位于D:\CSO2\Data\cstrike下,或D:\CSO2处的custom）
