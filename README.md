@@ -17,6 +17,20 @@ This pack contains: New lobby promotion banner, CN_font, Chinese voicelines for 
 Link: https://drive.google.com/file/d/1Frsf6xsx8J1mO_Qa9VZFoquuwtR0yCxB/view
 Youtube: https://www.youtube.com/watch?v=Ai_8mu9RdpI
 
+### Architecture & Technical Implementation
+
+#### 1. Problem Statement & System Discrepancies
+The Chinese CSOL2 Community lacked a vanilla-compatible localization file for the *CSO2 Global* launcher/Game, restricting players to play on the highly modified, asset-bloated private server clients of CSOL2 (such as *QingXue*). In order to create a clean, vanilla Simplified Chinese language environment on the global executable, the localization files were extracted from the QingXue server build. However, this database was severely stripped-down and lacked the mandatory configuration strings for weapons, assets, and character models newly introduced to the *CSO2 Global* version.
+
+#### 2. String Migration, Data Validation & UI Patching
+Because the QingXue Chinese files lacked structural alignment with the Global build, running the game caused critical text asset failures, where newly added weapons and character items would display broken, raw internal system filenames instead of their correct, user-facing titles. System execution passes included:
+*   **Database Synchronization:** Cross-referenced and extracted structural database parameters from the vanilla English localization logs, manually injecting the missing configuration lines into the Chinese language dictionary to map proper text titles onto global items.
+*   **UI Hierarchy Testing & Layout Verification:** Conducted extensive runtime validation and game playtesting frames to ensure text boxes, user-interface menus, and font layout layers displayed strings correctly without client-side asset clipping or menu-rendering bugs.
+*   **Decryption & Command Routing:** Configured command-line parameters (`-decryptedfiles`, `-enablecustom`) to force the engine client to bypass default encrypted pak file path limits, successfully routing the game runtime to read custom typographical fonts, bot profiles, bad-word filter scripts, and audio telemetry files natively.
+
+#### 3. Collaborative Development Loops
+To manage individual language limits while keeping peak velocity on testing UI stability and fixing command-line launcher compatibility, translation strings were crowd-sourced. A native Chinese partner (`TeardropWaltz`) was brought into the pipeline to translate and audit high-density text files for game modes, specialized weapons, trophies, and localized documentation.
+
 -ZH-
 玩家需把模组文件下的整个文件夹与在CSO2目录下的对应文件夹进行整体替换（CSO2目录下需替换的文件大多位于D:\CSO2\Data\cstrike下,或D:\CSO2处的custom）
 
