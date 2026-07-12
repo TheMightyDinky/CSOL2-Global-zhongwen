@@ -11,7 +11,7 @@ Counter-Strike: Online 2 is owned by both Nexon and Valve. Remixing, building up
 代码由“CSO2 晴雪服”提供, 由THE MIGHTY DINKY 编译修复（CODE BORROWED FROM CSO2 QINGXUE, EDITED AND FIXED BY THEMIGHTYDINKY）
 由玩家TeardropWaltz提供翻译文本（HELPED WITH THE TRANSLATION BY TEARDROPWALTZ）
 
-This pack contains: New lobby promotion banner CN_font Chinese voicelines for bots Tutorial Chinese voicelines ime.xml file QingXue Botprofile (Better than the current one in my opinion; I would actually suggest this botprofile to Organner so we could replace the old one) Modification of the Simplified Chinese files from CSOL2 (aka CSO2 QingXue, CSO2 QQ) Bad word censor script (Might work on Global)
+This pack contains: New lobby promotion banner, CN_font, Chinese voicelines for bots, Tutorial Chinese voicelines, ime.xml file, QingXue Botprofile (Better than the current one in my opinion; I would actually suggest this botprofile to Organner so we could replace the old one), Modification of the Simplified Chinese files from CSOL2 (aka CSO2 QingXue, CSO2 QQ), Bad word censor script (Might work on Global; not tested)
 
 # 安装模组指南（Guide for installing the mod)
 Link: https://drive.google.com/file/d/1Frsf6xsx8J1mO_Qa9VZFoquuwtR0yCxB/view
